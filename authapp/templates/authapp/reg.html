@@ -1,0 +1,29 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>reg test</title>
+
+<script src="{% static 'authapp/js/reg_form.js' %}" defer></script>
+
+</head>
+
+<body style="display: flex; align-items: center; justify-content: center;">
+
+<h2>Регистрация</h2>
+
+<form id="reg_form">
+
+<input type="text" name="login" placeholder="Логин">
+<br>
+<input type="password" name="password" placeholder="Пароль">
+<br>
+<button type="submit">Зарегистрироваться</button>
+</form>
+<div id="result"></div>
+</body>
+</html>
